@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | GridForger</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Include the same navbar -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #c3bebe;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">GridForger</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="/home/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/contact/">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/quote/">Quote</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/about/">About Us</a></li>
+                            <li><a class="dropdown-item" href="/reviews/">Reviews</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="contact-section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4" data-aos="fade-down">Let's Connect</h2>
+            <p class="text-center mb-5 text-muted" data-aos="fade-down" data-aos-delay="100">
+                Questions? Ideas? Reach out and let's build something great together.
+            </p>
+
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-5 mb-4" data-aos="fade-right" data-aos-duration="800">
+                    <div class="contact-card shadow-sm p-4 d-flex flex-column gap-3 h-100">
+                        <div>
+                            <h5 class="mb-3">Contact Information</h5>
+                            <p class="mb-2"><strong>Email:</strong> <a
+                                    href="mailto:ken@gridforger.com">khyde@gridforger.com</a></p>
+                            <p class="mb-2"><strong>Phone:</strong> <a href="tel:+12509818547">(250) 981-8547</a></p>
+                            <p class="mb-3"><strong>Location:</strong> Prince George, Canada</p>
+                        </div>
+
+                        <!-- Google Map inside the card -->
+                        <div class="map-container">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d150588.1281490141!2d-122.77851121903043!3d53.86172370594078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1750411242283!5m2!1sen!2sca"
+                                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-12 col-md-7" data-aos="fade-left" data-aos-delay="150" data-aos-duration="800">
+                    <div class="contact-card shadow-sm p-4">
+                        <form action="#" method="POST">
+                            <div class="mb-3" data-aos="fade-up" data-aos-delay="200">
+                                <label for="name" class="form-label">Your Name</label>
+                                <input type="text" id="name" name="name" class="form-control" required />
+                            </div>
+                            <div class="mb-3" data-aos="fade-up" data-aos-delay="300">
+                                <label for="email" class="form-label">Your Email</label>
+                                <input type="email" id="email" name="email" class="form-control" required />
+                            </div>
+                            <div class="mb-3" data-aos="fade-up" data-aos-delay="400">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+                            </div>
+                            <div data-aos="fade-up" data-aos-delay="500">
+                                <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div> <!-- end row -->
+        </div> <!-- end container -->
+    </section>
+
+    <!-- Optional footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; <span id="year"></span> GridForger. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="/contact/">Contact</a>
+                    <a href="/quote/">Get a Quote</a>
+                    <a href="/about/">About</a>
+                </div>
+                <div class="footer-links">
+                    <p>Have questions? <a href="mailto:ken@gridforger.com">Email us</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
