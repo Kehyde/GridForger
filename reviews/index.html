@@ -4,11 +4,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description"
+        content="We specialize in professional website development for the auto industry, including car dealerships, repair shops, and vehicle inventory platforms. Our responsive, SEO-optimized websites help automotive businesses attract more customers and grow online.">
+    <meta name="keywords"
+        content="auto industry website development, car dealership website design, automotive web solutions, mechanic shop website, custom auto websites, responsive car dealer websites, vehicle inventory web design, auto repair shop websites, car sales website development, automotive website SEO, freelance web developer, website builder">
+    <meta name="author" content="GridForger">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+    <title>Reviews | GridForger</title>
 </head>
 
 <body>
-    <h2>Coming Soon</h2>
+    <nav class="navbar navbar-expand-lg" style="background-color: #c3bebe;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/home/">GridForger</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/home/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact/">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/quote/">Quote</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/about/">About Us</a></li>
+                            <li><a class="dropdown-item" href="/reviews/">Reviews</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="reviews-section container py-5">
+        <h2 class="text-center mb-4">What People Are Saying</h2>
+        <p class="text-center mb-5 text-muted">
+            I’m just getting started — so while there aren’t any reviews here yet, that just means your feedback could
+            be
+            one of the first. I’m committed to delivering clean, functional websites that clients are proud to launch.
+        </p>
+
+        <!-- Carousel -->
+        <div id="testimonialCarousel" class="carousel slide position-relative mb-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <div class="testimonial-card mx-auto p-4">
+                        <p class="fs-5">“⭐️⭐️⭐️⭐️⭐️ <br> Working with GridForger was a seamless experience. The site
+                            turned
+                            out better than I imagined.”</p>
+                        <p class="text-end fst-italic">— Future Client Name </p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="testimonial-card mx-auto p-4">
+                        <p class="fs-5">“Coming soon — your testimonial could be here.”</p>
+                        <p class="text-end fst-italic">— Maybe You?</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Custom Carousel Controls -->
+            <button class="custom-carousel-control left" type="button" data-bs-target="#testimonialCarousel"
+                data-bs-slide="prev">
+                &#10094;
+            </button>
+            <button class="custom-carousel-control right" type="button" data-bs-target="#testimonialCarousel"
+                data-bs-slide="next">
+                &#10095;
+            </button>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="text-center mt-5">
+            <h4>Your project could be the next success story.</h4>
+            <p><a href="/contact/" class="btn btn-primary mt-2">Let's Build Something Great Together</a></p>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; <span id="year"></span> GridForger. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="/contact/">Contact</a>
+                    <a href="/quote/">Get a Quote</a>
+                    <a href="/about/">About</a>
+                </div>
+                <div class="footer-links">
+                    <p>Have questions? <a href="mailto:khyde@gridforger.com">Email us</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
