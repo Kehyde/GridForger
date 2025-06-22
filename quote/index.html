@@ -65,14 +65,13 @@
                 </div>
             </div>
 
-            <form name="quote" method="POST" data-netlify="true" netlify-honeypot="bot-field"
-                class="quote-form mx-auto">
-                <!-- Hidden input for Netlify form name -->
-                <input type="hidden" name="form-name" value="quote" />
-                <!-- Honeypot field to catch bots -->
-                <p class="hidden">
-                    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-                </p>
+            <form action="https://formspree.io/f/xovwnoda" method="POST">
+
+                <!-- Redirect after submit -->
+                <input type="hidden" name="_redirect" value="https://www.gridforger.com/quote/">
+
+                <!-- Optional custom subject -->
+                <input type="hidden" name="_subject" value="Quote Form Submission">
 
                 <div class="form-group">
                     <label for="name">Name <span class="required">*</span></label>
@@ -141,8 +140,7 @@
                 <blockquote class="trust-booster mt-5 text-center">
                     “I treat every project like my own — you won’t be passed off or left in the dark. What you see is
                     what
-                    you
-                    get: clean code, thoughtful design, and clear communication.”<br />
+                    you get: clean code, thoughtful design, and clear communication.”<br />
                     <cite>— Ken, Founder of GridForger</cite>
                 </blockquote>
 

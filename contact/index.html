@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <title>Contact | GridForger</title>
 </head>
 
@@ -81,11 +82,13 @@
                 <!-- Contact Form -->
                 <div class="col-12 col-md-7" data-aos="fade-left" data-aos-delay="150" data-aos-duration="800">
                     <div class="contact-card shadow-sm p-4">
-                        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-                            <input type="hidden" name="form-name" value="contact" />
-                            <p hidden>
-                                <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-                            </p>
+                        <form action="https://formspree.io/f/mgvyljke" method="POST">
+
+                            <!-- Redirect after successful submission -->
+                            <input type="hidden" name="_redirect" value="https://www.gridforger.com/contact/">
+
+                            <!-- Optional email subject -->
+                            <input type="hidden" name="_subject" value="Contact Form Submission" />
 
                             <div class="mb-3" data-aos="fade-up" data-aos-delay="200">
                                 <label for="name" class="form-label">Your Name</label>
